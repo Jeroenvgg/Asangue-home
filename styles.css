@@ -12,29 +12,36 @@ body {
   }
 
 /* Here the header element will be defined */
-header{
+ .header{
   display: flex;
-  justify-content: center;
-  justify-items: center;
 }
 
-.nav-links {
+a{
+  color:white;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.logo img {
+  height: 55px;
+  width:55px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.links {
   position: absolute; /* Fixed position to place it relative to the page */
   top: 10px; /* Adjust top positioning as needed */
   right: 20px; /* Adjust right positioning as needed */
 }
 
-.nav-links a{
-  color:white;
-  float: right;
-  margin:0 8px 0 0;
-}
 
-.nav-links a:hover{
+a:hover{
   text-decoration: none;
 }
 
-  .logo{
+  h1{
     font-style: Jaro;
     font-size: 6rem;
     color: #961e30;;
@@ -86,6 +93,9 @@ h3 {
   margin: 20px 0; /* Adjust as needed */
   width: 75%; 
 }
+
+/* Here the footer contact will be defined */
+
 .contact {
   display: flex;
   border: solid;
@@ -97,6 +107,17 @@ h3 {
 .contact img{
   height: 150px;
   width: 150px;
+}
+
+.image-container {
+  width: 100%;
+  position: absolute; /* Position at the bottom of the body */
+  bottom: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  background-color: #282a2b; /* Match body background color */
+  padding: 20px 0;
 }
 
 @media only screen and (max-width: 600px) {
