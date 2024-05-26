@@ -2,7 +2,14 @@ body {
     background-color: #202122;
     color: white;
   }
-  
+
+a {
+  color:white;
+}
+a:hover{
+  text-decoration: none;
+}
+
   h1{
     font-style: Jaro;
     font-size: 6rem;
