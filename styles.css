@@ -1,19 +1,104 @@
+html {
+  font-size: 16px;
+}
+
 body {
-    background-color: #202122;
+    background-color: #282a2b;
     color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
   }
 
-a {
-  color:white;
+/* Here the header element will be defined */
+header{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
-a:hover{
+
+.nav-links {
+  position: absolute; /* Fixed position to place it relative to the page */
+  top: 10px; /* Adjust top positioning as needed */
+  right: 20px; /* Adjust right positioning as needed */
+}
+
+.nav-links a{
+  color:white;
+  float: right;
+  margin:0 8px 0 0;
+}
+
+.nav-links a:hover{
   text-decoration: none;
 }
 
-  h1{
+  .logo{
     font-style: Jaro;
     font-size: 6rem;
-    color:#6E202F;
+    color: #961e30;;
     text-shadow: 3px 3px 3px black;
+    margin: 0;
+    
   }
-  
+
+
+/* Here the log-in element will be defined */
+.log-in {
+  border-color: white;
+  border: solid;
+  margin: 5px;
+  width: 50%;
+  padding: 0.5em;
+}
+
+
+/* Here the mission will be defined */
+h3 {
+  font-style: italic;
+}
+
+.about {
+  display:flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content:center;
+  gap: 20px;
+}
+
+.feature{
+  flex: 1 1 calc(50% - 20px); /* 50% width minus the gap */
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.feature img{
+  height:155px;
+  width:165px;
+  border: solid;
+}
+
+.solid-white-line {
+  border: 0;
+  height: 2px;
+  background: white;
+  margin: 20px 0; /* Adjust as needed */
+  width: 75%; 
+}
+.contact {
+  display: flex;
+  border: solid;
+  gap: 10px;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.contact img{
+  height: 150px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
